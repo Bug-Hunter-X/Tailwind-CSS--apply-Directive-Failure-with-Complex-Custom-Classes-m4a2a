@@ -1,0 +1,27 @@
+/* bugSolution.css */
+
+/* Correctly define and use variables */
+:root {
+  --primary-color: #333;
+}
+
+.bg-primary {
+  @apply bg-var(--primary-color);
+}
+
+/* Use straightforward selectors */
+.text-lg-only {
+  @screen lg { @apply text-lg; }
+}
+
+/* Avoid complex selectors that may cause issues */
+.complex-selector {
+  /* Simplify this selector if possible */
+}
+
+/* Ensure proper nesting within @apply if you need it */
+.nested-apply {
+  @apply flex items-center justify-center;
+}
+
+/* Always validate your selectors and variables to avoid unexpected behavior. */
